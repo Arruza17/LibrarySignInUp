@@ -29,8 +29,8 @@ public class User implements Serializable{
     
    
     /**
-     * Getter of the user that creates a unique instance of User
-     * @return 
+     * Getter of the user that creates a unique instance of User.
+     * @return user - unique instance of User.
      */
     public static User getUser(){
         
@@ -117,7 +117,7 @@ public class User implements Serializable{
     }
     /**
      * Gets the current status of the user.
-    * @return 
+    * @return status - user's status. 
     */
     public Enum getStatus() {
         return status;
