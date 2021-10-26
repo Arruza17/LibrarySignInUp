@@ -6,6 +6,9 @@
 package interfaces;
 
 import model.User;
+
+import exceptions.ServerDownException;
+
 /**
  * This interface contains the methots that allow both
  * model and logic connect
