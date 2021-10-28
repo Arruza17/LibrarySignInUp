@@ -5,6 +5,7 @@
  */
 package interfaces;
 
+import exceptions.LoginFoundException;
 import model.User;
 
 import exceptions.ServerDownException;
@@ -22,7 +23,7 @@ public interface Connectable {
      *
      * @param user the user to be set
      */
-    public DataEncapsulator signIn(User user) throws ServerDownException;
+    public DataEncapsulator signIn(User user) throws ServerDownException, LoginFoundException;
 
     /**
      * This method signs Up the user
