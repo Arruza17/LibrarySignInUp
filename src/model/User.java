@@ -8,7 +8,7 @@ package model;
 import enumerations.UserPrivilege;
 import enumerations.UserStatus;
 import java.io.Serializable;
-import java.security.Timestamp;
+import java.sql.Timestamp;
 
 /**
  *
