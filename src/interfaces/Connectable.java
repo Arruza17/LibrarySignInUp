@@ -23,13 +23,13 @@ public interface Connectable {
      *
      * @param user the user to be set
      */
-    public DataEncapsulator signIn(User user) throws ServerDownException, LoginFoundException;
+    public DataEncapsulator signIn(User user) throws ServerDownException;
 
     /**
      * This method signs Up the user
      *
      * @param user
      */
-    public void signUp(User user) throws ServerDownException;
+    public void signUp(User user) throws ServerDownException, LoginFoundException;
 
 }

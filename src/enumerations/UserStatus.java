@@ -19,5 +19,5 @@ public enum UserStatus {
     /**
      *This value states that the current user's status is an admin.
      */
-    ADMIN;
+    ADMIN
 }

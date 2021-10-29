@@ -19,6 +19,6 @@ package enumerations;
     /**
      *Removes all the privileges of the user.
      */
-    DISABLED;
+    DISABLED
     }
 
