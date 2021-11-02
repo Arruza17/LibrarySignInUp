@@ -14,43 +14,40 @@ import java.sql.Timestamp;
  *
  * @author Adrian perez
  */
-public class User implements Serializable{
-    
-   
+public class User implements Serializable {
+
     private int id;
     private String login;
     private String email;
     private String fullName;
     private UserStatus status;
-    private UserPrivilege privilege;    
+    private UserPrivilege privilege;
     private String password;
     private Timestamp lastPasswordChange;
     private static User user;
-    
-   
+
     /**
      * Getter of the user that creates a unique instance of User.
+     *
      * @return user - unique instance of User.
      */
-    public static User getUser(){
-        
-        if(user==null){
-            user=new User();
-        }
-        
-        return user;                  
+    public static User getUser() {
+
+        user = new User();
+
+        return user;
     }
-    
-     /**
+
+    /**
      * Empty constructor of the user.
      */
-    
-    private User(){
-        
+    private User() {
+
     }
 
     /**
      * Gets the user's id.
+     *
      * @return id - The id of the User
      */
     public int getId() {
@@ -59,7 +56,8 @@ public class User implements Serializable{
 
     /**
      * Sets the user's id.
-     * @param id 
+     *
+     * @param id
      */
     public void setId(int id) {
         this.id = id;
@@ -67,6 +65,7 @@ public class User implements Serializable{
 
     /**
      * Gets the user's login username.
+     *
      * @return login - user's username.
      */
     public String getLogin() {
@@ -75,6 +74,7 @@ public class User implements Serializable{
 
     /**
      * Sets the user's username.
+     *
      * @param login - user's username.
      */
     public void setLogin(String login) {
@@ -83,6 +83,7 @@ public class User implements Serializable{
 
     /**
      * Gets user's email.
+     *
      * @return email - user's email.
      */
     public String getEmail() {
@@ -91,58 +92,61 @@ public class User implements Serializable{
 
     /**
      * Sets user's email.
+     *
      * @param email - user's email.
      */
-    
     public void setEmail(String email) {
         this.email = email;
     }
 
     /**
      * Gets user's full name.
+     *
      * @return fullname - User's full name.
      */
-    
     public String getFullName() {
         return fullName;
     }
 
     /**
      * Sets user's full name.
-     * @param fullName 
+     *
+     * @param fullName
      */
-    
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
+
     /**
      * Gets the current status of the user.
-    * @return status - user's status. 
-    */
+     *
+     * @return status - user's status.
+     */
     public Enum getStatus() {
         return status;
     }
 
     /**
      * Sets user's status.
-     * @param status - user's status. 
+     *
+     * @param status - user's status.
      */
-    
     public void setStatus(UserStatus status) {
         this.status = status;
     }
 
     /**
      * Gets user's privilege.
+     *
      * @return privilege - user's privilege.
      */
-    
     public Enum getPrivilege() {
         return privilege;
     }
 
     /**
-     *Sets user's privilege
+     * Sets user's privilege
+     *
      * @param privilege - user's privilege.
      */
     public void setPrivilege(UserPrivilege privilege) {
@@ -150,7 +154,8 @@ public class User implements Serializable{
     }
 
     /**
-     * Gets user's password. 
+     * Gets user's password.
+     *
      * @return password - user's password.
      */
     public String getPassword() {
@@ -159,6 +164,7 @@ public class User implements Serializable{
 
     /**
      * Sets user's password.
+     *
      * @param password - user's password.
      */
     public void setPassword(String password) {
@@ -167,6 +173,7 @@ public class User implements Serializable{
 
     /**
      * Gets user's last password change.
+     *
      * @return lastPasswordChange - user's last password change.
      */
     public Timestamp getLastPasswordChange() {
@@ -174,25 +181,23 @@ public class User implements Serializable{
     }
 
     /**
-     * Sets user's last password change. 
+     * Sets user's last password change.
+     *
      * @param lastPasswordChange - user's last password change.
      */
     public void setLastPasswordChange(Timestamp lastPasswordChange) {
         this.lastPasswordChange = lastPasswordChange;
-    
+
     }
-        
-/**
- * to string method that returns all the values of the attributes.
- * @return returns all the values of the attributes in a String.
- */
+
+    /**
+     * to string method that returns all the values of the attributes.
+     *
+     * @return returns all the values of the attributes in a String.
+     */
     @Override
     public String toString() {
         return "User{" + "id=" + id + ", login=" + login + ", email=" + email + ", fullName=" + fullName + ", status=" + status + ", privilege=" + privilege + ", password=" + password + ", lastPasswordChange=" + lastPasswordChange + '}';
     }
-    
-    
-    
-}
 
-   
+}

@@ -32,4 +32,6 @@ public interface Connectable {
      */
     public void signUp(User user) throws ServerDownException, LoginFoundException;
 
+    
+
 }
