@@ -1,7 +1,7 @@
 package exceptions;
 
 /**
- *
+ * This exception is used in case the e-mail format typed is incorrect.
  * @author Yeray Sampedro
  */
 public class EmailFormatException extends Exception{

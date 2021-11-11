@@ -1,7 +1,7 @@
 package exceptions;
 
 /**
- *
+ * This exception is used in case max characters in one field are reached.
  * @author Yeray Sampedro
  */
 public class MaxCharactersException extends Exception{

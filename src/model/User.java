@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
 
 import enumerations.UserPrivilege;
@@ -11,7 +6,7 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- *
+ * This class contains the User class
  * @author Adrian perez
  */
 public class User implements Serializable {
@@ -57,7 +52,7 @@ public class User implements Serializable {
     /**
      * Sets the user's id.
      *
-     * @param id
+     * @param id the id to set
      */
     public void setId(int id) {
         this.id = id;
@@ -111,7 +106,7 @@ public class User implements Serializable {
     /**
      * Sets user's full name.
      *
-     * @param fullName
+     * @param fullName the fullName to set
      */
     public void setFullName(String fullName) {
         this.fullName = fullName;

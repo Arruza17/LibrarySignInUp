@@ -1,7 +1,7 @@
 package exceptions;
 
 /**
- *
+ * This exception is used  if the name doesn't  have a gap
  * @author Yeray Sampedro
  */
 public class FullNameGapException extends Exception {

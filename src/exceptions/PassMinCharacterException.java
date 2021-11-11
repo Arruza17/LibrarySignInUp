@@ -1,7 +1,7 @@
 package exceptions;
 
 /**
- *
+ * This exception is used in case minimum character limit isn't reached.
  * @author Yeray Sampedro
  */
 public class PassMinCharacterException extends Exception{

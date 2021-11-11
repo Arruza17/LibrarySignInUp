@@ -1,12 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package enumerations;
 
 /**
- *
+ * This ennumeration contains the two types of user status.
  * @author Adrian Perez
  */
 public enum UserStatus {

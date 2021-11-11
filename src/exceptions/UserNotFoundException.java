@@ -1,9 +1,8 @@
 package exceptions;
 
-import model.User;
 
 /**
- *
+ * This exception is used in case user is not found.
  * @author Yeray Sampedro
  */
 public class UserNotFoundException extends Exception{

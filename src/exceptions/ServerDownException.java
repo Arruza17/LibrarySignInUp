@@ -1,12 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package exceptions;
 
 /**
- *
+ * This exception is used in case the server is down.
  * @author Yeray Sampedro
  */
 public class ServerDownException extends Exception {
