@@ -12,7 +12,7 @@ package exceptions;
 public class PasswordFormatException extends Exception{
 
     public PasswordFormatException() {
-        super("Password format error: Passwords should not contain spaces");
+        super("Password format error:\nPasswords should not contain spaces");
     }
     
 }
